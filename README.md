@@ -1,4 +1,4 @@
-# Java-CustomExceptions
+# Java-Custom Exceptions
 Java Custom Exceptions
 
 Here are two different examples on creating custom exceptions.
