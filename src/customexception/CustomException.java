@@ -56,6 +56,7 @@ public class CustomException {
     }
 
     //Method to check for digits in a given username.
+    //Notice the different usage of "throw" and "throws"
     public static void checkForDigit(String username) throws UserNameMustHaveNumberException {
         int digit = 0;
         //Loop through each character in username to check for any digit
@@ -67,11 +68,13 @@ public class CustomException {
         }
         //check if digit has increased
         if (digit == 0) {
+            
             throw new UserNameMustHaveNumberException(username);
         }
     }
 
     //Method to check for age Exception.
+    //Notice the different usage of "throw" and "throws"
     public static void checkInvalidAge(int age) throws InvalidAgeException {
         if (age > 110) {
             throw new InvalidAgeException();
